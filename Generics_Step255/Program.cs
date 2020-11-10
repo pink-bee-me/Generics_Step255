@@ -18,7 +18,7 @@ namespace Generics_Step255
             employees.Things.Add("wipes");
             
             employees.PrintListToConsole();
-
+            Console.ReadLine();
 
 
         }

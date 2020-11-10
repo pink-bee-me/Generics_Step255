@@ -30,7 +30,7 @@ namespace Generics_Step255
                 Console.WriteLine(things);
                
             }
-            Console.ReadLine();
+           
         }
     }
 }

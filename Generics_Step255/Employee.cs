@@ -9,15 +9,14 @@ using System.Threading.Tasks;
 
 namespace Generics_Step255
 {
-   public class Employees<T>
+   public class Employee<T>
 
-    {
-
+    { 
+        int i;
        
-        public List<string> Things { get; set; }
-        public string things { get; set; }
-        
-
+        public List<T> Things { get; set; }
+      
+    
         public string Add(string things)
         {
             return things;
@@ -25,9 +24,9 @@ namespace Generics_Step255
 
         public void PrintListToConsole()
         {
-          foreach(string things in Things)
-                {
-                Console.WriteLine(things);
+            for (int i = 0; i < Things.Count; i++)
+            { 
+                Console.WriteLine(Things[i]);
                
             }
            

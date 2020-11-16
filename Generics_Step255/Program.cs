@@ -10,20 +10,34 @@ namespace Generics_Step255
     {
         static void Main(string[] args)
         {
-            Employee<string> employee1 = new Employee<string>();
-            employee1.Things = new List<string>();
-            employee1.Things.Add("barbeque");
-            employee1.Things.Add("napkins");
-            employee1.Things.Add("plates");
-            employee1.Things.Add("wipes");
+            string employeeTodo = new Employee;
+            Console.WriteLine("What do you need to do?");
+            string task =  Console.ReadLine()
 
-            employee1.PrintListToConsole();
-            Console.ReadLine();
+            foreach (Employee tasks in Things)
+            {
 
-            Employee<int> employee2 = new Employee<int>();
-            employee2.Things = new List<int>() { 1, 3, 5, 7, 9, 11 };
-            employee2.PrintListToConsole();
-            Console.ReadLine();
+            }
+            List<Employee> Things = new List<Employee>();
+
+            Employee<ITodo> employee_Group_1 = new Employee<T>(int id);
+
+
+
+            //Employee employee1 = new Employee<string>();
+            //employee1.Things = new List<string>();
+            //employee1.Things.Add("barbeque");
+            //employee1.Things.Add("napkins");
+            //employee1.Things.Add("plates");
+            //employee1.Things.Add("wipes");
+
+            //employee1.PrintListToConsole();
+            //Console.ReadLine();
+
+            //Employee<int> employee2 = new Employee<int>();
+            //employee2.Things = new List<int>() { 1, 3, 5, 7, 9, 11 };
+            //employee2.PrintListToConsole();
+            //Console.ReadLine();
         }
     }
 }

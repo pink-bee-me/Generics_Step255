@@ -9,26 +9,35 @@ using System.Threading.Tasks;
 
 namespace Generics_Step255
 {
-   public class Employee<T>
+   public class Employee<TThings>
 
     { 
-        int i;
+        public Employee(Tasks task)
+        {
+            Task = task;
+            Id = Id;
+        }
        
-        public List<T> Things { get; set; }
+        public List<TThings> Things { get; set; }
+        public Tasks { get; set; }
+        public int Id { get; set; }
       
     
-        public string Add(string things)
+        public string Add()
         {
             return things;
         }
 
         public void PrintListToConsole()
         {
-            for (int i = 0; i < Things.Count; i++)
+            for (int i = 0; i < employee1.Things.Count; i++)
             { 
                 Console.WriteLine(Things[i]);
                
             }
+
+            for (int j = 0; j > employee2.Things.Count; j++)
+            { }
            
         }
     }
